@@ -6,8 +6,9 @@ public class App
 {
     public static void main( String[] args ){
 
-       // Exos.numAuCarre();
-       // Exos.cQuoiTonNom();
-        Exos.PrixetNombreDarticle();
+// Exos.numAuCarre();
+// Exos.cQuoiTonNom();
+// Exos.PrixetNombreDarticle();
+        Exos.NbrPositifOuNegatif();
     }
 }
