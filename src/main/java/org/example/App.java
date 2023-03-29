@@ -2,6 +2,9 @@ package org.example;
 
 import org.example.Exercices.Exos;
 
+
+
+
 public class App
 {
     public static void main( String[] args ){
@@ -12,7 +15,10 @@ public class App
 // Exos.NbrPositifOuNegatif();
 //Exos.ProduitNegOuPos();
 //Exos.nomOrdreAlphabetique();
-        Exos.NbrEntreUnEtTrois();
+// Exos.NbrEntreUnEtTrois();
+// Exos.Occu();
+// Exos.isAnagramSort();
+Exos.isPalin();
 
     }
 }
