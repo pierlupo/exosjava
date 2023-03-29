@@ -9,6 +9,10 @@ public class App
 // Exos.numAuCarre();
 // Exos.cQuoiTonNom();
 // Exos.PrixetNombreDarticle();
-        Exos.NbrPositifOuNegatif();
+// Exos.NbrPositifOuNegatif();
+//Exos.ProduitNegOuPos();
+//Exos.nomOrdreAlphabetique();
+        Exos.NbrEntreUnEtTrois();
+
     }
 }
