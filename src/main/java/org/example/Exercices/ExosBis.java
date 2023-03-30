@@ -113,5 +113,104 @@ public class ExosBis {
         for (int copiedArr : arr)
             System.out.println(copiedArr * 2);
     }
+
+
+
+
+//Exo ArrOccu
+public static void ArrOcc() {
+
+    int [] tab = new int [] {1, 1, 7, 3, 2, 2, 2, 4, 1};
+    int [] count = new int[100];
+    /* i : compteur, tmp : stock tmporairement la valeur
+    à un certain index du tableau tab[]*/
+    int i,tmp = 0;
+    /* tmp agira comme une valeur d'index pour le tableau count
+    et gardera une trace du nombre d'occurrences de chaque nombre*/
+    for(i = 0; i < tab.length; i++){
+        tmp = tab[i];
+        count[tmp]++;
+    }
+    for(i=1; i < count.length; i++){
+        if(count[i] == 1){
+            System.out.printf("%d se produit %d fois\n",i, count[i]);
+        }
+        else if(count[i] >= 2){
+            System.out.printf("%d se produit %d fois\n",i, count[i]);
+        }
+    }
 }
+
+
+public static void triCroissant(){
+        int[] array = {11, 34, 23, 62, 6, 41};
+
+        // afficher tous les entiers avant le tri
+        for (int entier : array) {
+            System.out.println("nombre: " + entier);
+        }
+
+        // trier le tableau
+        Arrays.sort(array);
+
+        // afficher tous les entiers après le tri
+        System.out.println("Tableau trié\n");
+        for (int entier : array) {
+            System.out.println("nombre: " + entier);
+        }
+    }
+
+    public static void TabReverse(){
+
+        int[] tab = {1, 2, 3, 4, 5, 6};
+        System.out.println("Tableau initial: " + Arrays.toString(tab));
+
+        for(int i=0; i< tab.length/2; i++){
+            int tmp = tab[i];
+            tab[i] = tab[tab.length-i-1];
+            tab[tab.length-i-1] = tmp;
+        }
+        System.out.println("Tableau inversé: " + Arrays.toString(tab));
+    }
+
+
+//Exo Algo TriFusion:
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
