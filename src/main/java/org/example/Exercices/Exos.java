@@ -247,8 +247,54 @@ public class Exos {
 
         }
 
+
+//Exo Table de multiplication:
+
+
+    public static void Tabledemultiplication () {
+        int nbr;
+        System.out.println("Entrer un nombre : ");
+        Scanner sc = new Scanner(System.in);
+        nbr = sc.nextInt();
+
+        for (int i = 1; i <= 10 ; i++) {
+            System.out.println(nbr + "x" + i + " = " + (nbr * i));
+        }
     }
 
+//Exo facto
+
+public static void Facto(){
+    Integer somme = 0;
+    Integer nbr = 0;
+    System.out.println("Donnez-moi un nombre : ");
+    Scanner sc = new Scanner(System.in);
+    nbr = sc.nextInt();
+    for (int i = 0; i < nbr; i++) {
+        somme = somme + i;
+
+    }
+    System.out.println("Somme = " + " " + somme );
+}
+
+//Exo pyramide
+public static void pyr() {
+    int rows;
+
+    System.out.println("Donnez-moi un nombre : ");
+    Scanner sc = new Scanner(System.in);
+    rows = sc.nextInt();
+    System.out.println("Pyramide \n");
+    for (int i = 0; i < rows; i++) {
+
+        for (int j = 0; j <= i; j++) {
+            System.out.print("*");
+        }
+        System.out.println("");
+    }
+}
+
+}
 
 
 
