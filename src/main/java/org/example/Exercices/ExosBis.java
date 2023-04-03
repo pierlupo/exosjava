@@ -143,21 +143,34 @@ public static void ArrOcc() {
 
 
 public static void triCroissant(){
-        int[] array = {11, 34, 23, 62, 6, 41};
+//        int[] array = {11, 34, 23, 62, 6, 41};
+//
+//        // afficher tous les entiers avant le tri
+//        for (int entier : array) {
+//            System.out.println("nombre: " + entier);
+//        }
+//
+//        // trier le tableau
+//        Arrays.sort(array);
+//
+//        // afficher tous les entiers après le tri
+//        System.out.println("Tableau trié\n");
+//        for (int entier : array) {
+//            System.out.println("nombre: " + entier);
+//        }
 
-        // afficher tous les entiers avant le tri
-        for (int entier : array) {
-            System.out.println("nombre: " + entier);
-        }
+    boolean tri = true;
+    int[] tab2 = {11, 34, 23, 62, 6, 41};
+    for (int i = 0; i <=tab2.length - 2 ; i++) {
+        tri = false;
+        i = tab2.length - 2;
+    }
 
-        // trier le tableau
-        Arrays.sort(array);
-
-        // afficher tous les entiers après le tri
-        System.out.println("Tableau trié\n");
-        for (int entier : array) {
-            System.out.println("nombre: " + entier);
-        }
+    if(tri == true){
+        System.out.println("le tableau trier de manière croissante");
+    } else {
+        System.out.println("le tableau n'est pas trié de manière croissante");
+    }
     }
 
     public static void TabReverse(){
@@ -174,7 +187,62 @@ public static void triCroissant(){
     }
 
 
-//Exo Algo TriFusion:
+//Exo Algo TriBulleSelection:
+
+    private static int[]tab = {12,1,45,89,16,35,98,12};
+
+//    private static void exoTriBulle(){
+//        System.out.println("Le tableau ");
+//        afficheTab(tab);
+//        int temp = 0;
+//        int i = 0;
+//        while(i<=tab.length-1) {
+//            for(int j= 0;j<(tab.length-1)-i; j++){
+//                if(tab[j] > tab[j+1]) {
+//                    temp = tab[j];
+//                    tab[j]= tab[j+1];
+//                    tab[j+1]= temp;
+//                }
+//            }
+//            i++;
+//        }
+//        System.out.println("Le tableau avec tri à bulle : ");
+//    }
+
+    private static void afficheTab(int[][] tableau) {
+        for (int i = 0; i < tableau.length; i++) {
+            for (int j = 0; j < tableau[i].length; j++) {
+                System.out.print("[" + tableau[i][j] + "]");
+            }
+            System.out.println("");
+        }
+    }
+
+
+//   private static void exoTriSelection() {
+//       System.out.println("Le Tableau : ");
+//       afficheTab(tab);
+//       System.out.println("");
+//       System.out.println("Les étapes : ");
+//       int min = 0;
+//       int indiceMin = 0;
+//       int indice = 0;
+//       int temp = 0;
+//
+//       while (indice<tab.length) {
+//           min=tab[indice];
+//           for (int i = 0; i < tab.length; i++) {
+//               if(tab[i]<min){
+//                   min=tab[i];
+//                   indiceMin=1;
+//               }
+//
+//           }
+//           temp=tab[indice];
+//           tab[indice] = ;
+//       }
+//   }
+
 
 }
 
